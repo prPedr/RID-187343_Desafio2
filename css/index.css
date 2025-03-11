@@ -1,0 +1,469 @@
+/* ==================================== GERAL ==================================== */
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: .87rem;
+    margin: 0;
+}
+
+p {
+    font-size: .875rem;
+    margin: 0;
+}
+
+.container-green {
+    width: 22.5rem;
+    height: 3rem;
+    background-color: #02A28F;
+    border-radius: 0.6rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* ==================================== NAVBAR ==================================== */
+
+#container-navbar {
+    height: 4.3rem;
+    background-color: #02A28F;
+    display: flex;
+    align-items: center;
+}
+
+#container-navbar > h1 {
+    margin-left: 9.75rem;
+}
+
+/* ============================ ALINHAMENTO CONTAINER SUPERIOR ============================ */
+
+#alinhamento-superior {
+    display: flex;
+    gap: 1.56rem;
+}
+
+/* ==================================== APRESENTAÇÃO ==================================== */
+
+#container-apresentacao {
+    width: 46.5rem;
+    height: 24.75rem;
+    margin-left: 9.75rem;
+    margin-top: 3rem;
+    background-image: linear-gradient(180deg, rgba(102, 102, 102, 0.22) 50%, rgb(0, 0, 0) 100%), url("../img/apresentacao/apresentacao.jpg");
+    background-size: cover;
+    border-radius: 0.6rem;
+    position: relative;
+}
+
+#text-apresentacao {
+    position: absolute;
+    padding-top: 18.18rem;
+    padding-left: 1.5rem;
+    color: white;
+}
+
+/* ==================================== POSTS POPULARES ==================================== */
+
+#container-populares {
+    margin-top: 3rem;
+    height: 24.75rem;
+}
+
+.container-green > h3 {
+    margin-left: 1.5rem;
+}
+
+.populares-item {
+    width: 22.5rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.4rem 0.6rem rgba(97, 97, 97, 0.4);
+    border-radius: 0.6rem;
+    margin-top: 1.25rem;
+}
+
+.populares-item > img {
+    width: 8.75rem;
+    height: 4.3rem;
+    margin-left: .6rem;
+}
+
+.text-populares {
+    margin-top: -2rem;
+    margin-left: .6rem;
+}
+
+.text-populares > p {
+    font-size: .75rem;
+    margin-top: .5rem;
+    color: #616161;
+}
+
+/* ============================ ALINHAMENTO CONTAINER SUPERIOR ============================ */
+
+#alinhamento-inferior {
+    display: flex;
+    gap: 1.56rem;
+}
+
+/* ==================================== POSTS RECENTES ==================================== */
+
+#container-recentes {
+    width: 46.5rem;
+    margin-top: 1.5rem;
+    margin-left: 9.75rem;
+}
+
+#cabecalho-recentes {
+    width: 46.5rem;
+    height: 3.5rem;
+    background-color: #02A28F;
+    border-radius: 0.6rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 26rem;
+}
+
+#cabecalho-recentes > h3 {
+    margin-left: 1.5rem;
+}
+
+
+.recentes-item {
+    width: 22.5rem;
+    height: 26rem;
+    margin-top: .7rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(97, 97, 97, 0.4);
+}
+
+#div-recentes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.text-recentes {
+    margin-top: .5rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.text-green {
+    color: #02A28F;
+}
+
+.data-recentes {
+    color: #616161;
+    font-weight: 500;
+}
+
+/* ==================================== CATEGORIAS ==================================== */
+
+#container-categorias {
+    width: 22.5rem;
+    margin-top: 1.5rem;
+}
+
+.categorias-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .875rem;
+    color: #616161;
+    font-weight: 600;
+}
+
+/* ==================================== FOOTER ==================================== */
+
+#container-footer {
+    margin-top: 6rem;
+    height: 3rem;
+    background-color: #02A28F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==================================== RESPONSIVIDADE ==================================== */
+
+/* ==================================== TABLET ==================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* GERAL */
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .container-green {
+        width: 22rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+
+    /* MAIN */
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* NAVBAR */
+    #container-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    #container-navbar > h1 {
+        margin-left: 0;
+    }
+
+    /* ALINHAMENTO */
+
+    #alinhamento-superior {
+        display: flex;
+        align-items: center;
+    }
+
+    /* APRESENTAÇÃO */
+    #container-apresentacao {
+        width: 32rem;
+        height: 24.75rem;
+        margin: 2rem auto;
+        background-size: cover;
+        border-radius: 0.6rem;
+        position: relative;
+    }
+
+    #text-apresentacao {
+        padding-top: 14rem;
+    }
+
+    /* POSTS RECENTES */
+    #cabecalho-recentes {
+        width: 32rem;
+        height: 2.5rem;
+        gap: 2rem;
+        margin-top: -2rem;
+    }
+
+    #container-recentes {
+        width: 32rem;
+        height: auto;
+        margin: 2rem auto;
+    }
+
+    #div-recentes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .recentes-item {
+        width: 100%;
+    }
+
+    .recentes-item > img {
+        width: 100%;
+    }
+
+    /* POSTS POPULARES */
+    #container-populares {
+        width: 22rem;
+        margin: 2rem auto;
+    }
+
+    #cabecalho-populares {
+        margin-top: -.1rem;
+    }
+
+    .populares-item {
+        width: 100%;
+    }
+
+    /* CATEGORIAS */
+    #container-categorias {
+        width: 22rem;
+        margin: 2rem auto;
+    }
+
+    #cabecalho-categorias {
+        margin-top: -2rem;
+    }
+
+    /* FOOTER */
+    footer {
+        order: 99;
+    }
+}
+
+
+/* ==================================== CELULAR ==================================== */
+
+@media only screen and (max-width: 768px) {
+    /* GERAL */
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .container-green {
+        width: 23rem;
+        height: 3rem;
+        margin: 1.5rem auto;
+    }
+
+    /* MAIN */
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* NAVBAR */
+
+    #container-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container-navbar > h1 {
+        margin-left: 0;
+    }
+
+    /* ALINHAMENTO */
+
+    #alinhamento-superior, #alinhamento-inferior {
+        display: contents;
+    }
+
+    /* APRESENTAÇÃO */
+
+    #container-apresentacao {
+        width: 23rem;
+        height: 24.75rem;
+        margin: 1.5rem auto;
+        order: 1;
+    }
+
+    #text-apresentacao {
+        padding-top: 17rem;
+    }
+
+    /* POSTS RECENTES */
+
+    #cabecalho-recentes {
+        width: 23rem;
+        height: 2.5rem;
+        gap: 3.6rem;
+        margin-top: -2rem;
+    }
+
+    #container-recentes {
+        width: 23rem;
+        height: 112rem;
+        margin: 1.5rem auto;
+        order: 2;
+    }
+
+    #div-recentes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recentes-item {
+        width: 23rem;
+    }
+
+    .recentes-item > img {
+        width: 23rem;
+    }
+
+    /* POSTS POPULARES */
+
+    #container-populares {
+        width: 23rem;
+        margin: 1.5rem auto;
+        order: 3;
+    }
+
+    #cabecalho-populares {
+        margin-top: -3rem;
+    }
+
+    .populares-item {
+        width: 23rem;
+    }
+
+    /* CATEGORIAS */
+
+    #container-categorias {
+        width: 23rem;
+        margin: 1.5rem auto;
+        order: 4;
+    }
+    #cabecalho-categorias {
+        margin-top: -4rem;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: -5rem;
+        order: 5;
+    }
+}
+
